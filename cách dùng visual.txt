@@ -1,4 +1,0 @@
-// git status: kiểm tra file change
-// git add -A: add vào staging
-//git commit -m "mô tả ngắn gọn về comit"
-// git clone remote_url
