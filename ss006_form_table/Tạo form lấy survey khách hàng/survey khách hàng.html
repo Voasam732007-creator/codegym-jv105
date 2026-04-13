@@ -2,38 +2,214 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>khách hàng</title>
+    <title>survey khách hàng</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
- <body style="background-color:rosybrown;"
-<form>
-    <fieldset>
-        <legend>form đăng kí</legend>
-      <fieldset style="background-color: wheat;">
 
-        <label for="unname">Họ và tên:</label> <br>
-        <input type="text" id="unname" name="unname"><br>
+<div class="container"><br>
 
-        <label for="email">Email:</label> <br>
-        <input type="email" id="email" name="email"><br>
+    <h1>Market Research Survey</h1>
+    <p>Please take a few moments to complete this satisfaction survey.</p>
 
-        <label for="phone">Số điện thoại:</label> <br>
-        <input type="text" id="phone" name="phone"><br><br>
+    <form>
 
-        Giới tính:<br>
-        <input type="radio" id="male" name="gender" value="Nam" checked>
-        <label for="male">Nam</label>
 
-        <input type="radio" id="female" name="gender" value="Nữ">
-        <label for="female">Nữ</label> <br> <br>
+        <div class="row"><br>
+            <label>What is your age range?</label>
+            <select>
+                <option>18-24</option>
+                <option>25-34</option>
+                <option>35-50</option>
+            </select>
+        </div>
 
-        <input type="submit" value="Đăng ký"
-                style="background-color: chartreuse;">
-      </fieldset>
 
-    </fieldset>
+        <div class="row"><br>
+            <label>What is your yearly income range?</label>
+            <select>
+                <option>$0 - $25,000</option>
+                <option>$25,000 - $50,000</option>
+            </select>
+        </div>
+
+
+        <div class="inline "><br>
+            <label class="title">Gender:</label><br>
+
+            <label>
+                <input type="radio" name="gender"> Male
+            </label><br>
+
+            <label>
+                <input type="radio" name="gender"> Female
+            </label>
+            <style>
+                .title {
+                    font-weight: bold;
+                }
+            </style>
+        </div>
+</div>
+
+
+<div class="row"><br>
+    <label style="font-weight: bold;">which of the following products have your purchased in the last 2 months. please check all that apply</label>
+    <div class="inline">
+        <input type="checkbox"> Product 1
+        <input type="checkbox"> Product 2
+        <input type="checkbox"> Product 3
+
+    </div>
+</div>
+
+
+<div class="row"><br>
+    <label style="font-weight: bold;">How often would you use our new product?</label>
+    <div class="inline">
+        <input type="radio" name="freq"> Daily<br>
+        <input type="radio" name="freq"> Weekly<br>
+        <input type="radio" name="freq"> Monthly<br>
+    </div>
+</div>
+
+
+<div class="row"><br>
+    <label style="font-weight: bold;">What would you pay for the new product?</label><br>
+    $ <input type="text" placeholder="Dollars">
+    . <input type="text" placeholder="Cents">
+</div>
+
+
+<div class="row"><br>
+    <label>what features would you like to see in the new  product </label> <br>
+
+    <textarea rows="10" cols="100"></textarea>
+
+</div>
+
+
+<div class="row"><br>
+    <label style="font-size: 40px;">Rate your agreement</label>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        td:first-child {
+            text-align: left;
+        }
+    </style>
+
+    <table>
+        <tr>
+            <th></th>
+            <th>Strongly Disagree</th>
+            <th>Disagree</th>
+            <th>Agree</th>
+            <th>Strongly Agree</th>
+        </tr>
+
+
+        <tr>
+            <td>Our products are priced fairly</td>
+            <td>
+                <label class="radio-col">
+                    <input type="radio" name="price">
+                    <span>1</span>
+                </label>
+            </td>
+            <td>
+                <label class="radio-col">
+                    <input type="radio" name="price">
+                    <span>2</span>
+                </label>
+            </td>
+            <td>
+                <label class="radio-col">
+                    <input type="radio" name="price">
+                    <span>3</span>
+                </label>
+            </td>
+            <td>
+                <label class="radio-col">
+                    <input type="radio" name="price">
+                    <span>4</span>
+                </label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Our products are high quality</td>
+            <td>
+                <label class="radio-col">
+                    <input type="radio" name="price">
+                    <span>1</span>
+                </label>
+            </td>
+            <td>
+                <label class="radio-col">
+                    <input type="radio" name="price">
+                    <span>2</span>
+                </label>
+            </td>
+            <td>
+                <label class="radio-col">
+                    <input type="radio" name="price">
+                    <span>3</span>
+                </label>
+            </td>
+            <td>
+                <label class="radio-col">
+                    <input type="radio" name="price">
+                    <span>4</span>
+                </label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>You would recommend our products to a friend or coworker.</td>
+            <td>
+                <label class="radio-col">
+                    <input type="radio" name="price">
+                    <span>1</span>
+                </label>
+            </td>
+            <td>
+                <label class="radio-col">
+                    <input type="radio" name="price">
+                    <span>2</span>
+                </label>
+            </td>
+            <td>
+                <label class="radio-col">
+                    <input type="radio" name="price">
+                    <span>3</span>
+                </label>
+            </td>
+            <td>
+                <label class="radio-col">
+                    <input type="radio" name="price">
+                    <span>4</span>
+                </label>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<br><button type="submit">Submit</button>
+
 </form>
+
+</div>
 
 </body>
 </html>
