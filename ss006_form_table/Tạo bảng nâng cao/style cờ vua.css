@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.chessboard {
+    border-collapse: collapse;
+    background-color: rgb(255 184 0 / 0.78);
+    border: 5px solid rgb(255 184 0 / 0.52);
+}
+
+
+.chessboard td {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.black {
+    background-color: #000000;
+}
+
+.white {
+    background-color: #ffffff;
+}
+
+
+.label {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #FFB800;
+    width: 30px !important;
+    height: 30px !important;
+}
