@@ -15,6 +15,5 @@ function calculate(type) {
     else if (type === "Division") {
         result = num1 / num2;
     }
-
-    console.log(result);
+    document.getElementById("result").innerHTML = result;
 }
