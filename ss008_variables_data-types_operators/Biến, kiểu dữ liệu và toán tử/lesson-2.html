@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đổi độ C sang F</title>
+</head>
+<body>
+
+<p>Chuyển đổi Celsius sang Fahrenheit</p>
+
+<input type="number" id="celsius" placeholder="Nhập độ C"><br><br>
+<button onclick="celsiusToFahrenheit()">Chuyển đổi</button>
+
+<script>
+    function celsiusToFahrenheit() {
+        let C = parseFloat(document.getElementById("celsius").value);
+        let F = (C * 9 / 5) + 32;
+
+        console.log(F);
+    }
+</script>
+
+</body>
+</html>

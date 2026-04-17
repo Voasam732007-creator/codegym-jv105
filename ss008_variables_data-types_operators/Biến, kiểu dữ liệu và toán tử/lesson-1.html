@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculate student scores</title>
+</head>
+<body>
+
+<h2>Enter student grades</h2>
+<p>Physics Points</p>
+<input type="number" id="Physical" placeholder="Physical"><br>
+<p>Chemical point</p>
+<input type="number" id="chermical" placeholder="Chemical"><br>
+<p>Biology Score</p>
+<input type="number" id="Biology" placeholder="Biology"><br>
+
+<button onclick="tinhDiem()">Calculate</button>
+
+<p id="ketQua"></p>
+
+<script>
+    function tinhDiem() {
+        let Physics = parseFloat(document.getElementById("Physical").value);
+        let Chemical = parseFloat(document.getElementById("chermical").value);
+        let Biology = parseFloat(document.getElementById("Biology").value);
+
+        let total = Physics + Chemical + Biology;
+        let average = total / 3;
+
+        console.log("total score: " + total);
+        console.log("average score: " + average);
+
+        document.getElementById("ketQua").innerHTML =
+           console
+        console.log(total);
+        console.log(average);
+    }
+</script>
+
+</body>
+</html>

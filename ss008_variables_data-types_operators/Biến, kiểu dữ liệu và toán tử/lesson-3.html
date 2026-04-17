@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>diện tích hình tròn</title>
+</head>
+<body>
+
+<p>Diện tích hình tròn</p><br>
+
+<input type="number" id="radius" placeholder="Nhập bán kính"><br><br>
+
+<button onclick="calculateArea()">tính</button>
+
+<script>
+    function calculateArea() {
+        let r = parseFloat(document.getElementById("radius").value);
+        let area = Math.PI * r * r;
+
+        console.log(area);
+    }
+</script>
+
+</body>
+</html>
