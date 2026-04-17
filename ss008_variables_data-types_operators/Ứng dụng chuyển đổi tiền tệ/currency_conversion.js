@@ -9,10 +9,10 @@ function convert() {
     if (from === to) {
         result = amount;
     }
-    else if (from === "USD" && to=== "VND") {
+    else if (from === "USD") {
         result = amount * rate;
     }
-    else if (from === "VND" && to=== "USD") {
+    else {
         result = amount / rate;
     }
 
