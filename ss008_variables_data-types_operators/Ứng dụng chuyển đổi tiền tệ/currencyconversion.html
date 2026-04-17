@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Converter</title>
+    <script src="currency_conversion.js"></script>
+</head>
+
+<body>
+
+<h3>Amount</h3>
+<input type="number" id="amount" min="0">
+
+<h3>Từ tiền tệ</h3>
+<select id="fromCurrency">
+    <option value="VND">VND</option>
+    <option value="USD">USD</option>
+</select>
+
+<h3>Đến tiền tệ</h3>
+<select id="toCurrency">
+    <option value="USD">USD</option>
+    <option value="VND">VND</option>
+</select>
+
+<button onclick="convert()">đổi</button>
+
+<h3>Result</h3>
+
+</body>
+</html>
