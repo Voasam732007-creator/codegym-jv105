@@ -11,13 +11,13 @@
 <input type="number" id="radius" placeholder="Nhập bán kính"><br><br>
 
 <button onclick="calculateArea()">tính</button>
+<p id="result"></p>
 
 <script>
     function calculateArea() {
         let r = parseFloat(document.getElementById("radius").value);
         let area = Math.PI * r * r;
-
-        console.log(area);
+        document.getElementById("result").innerHTML = area;
     }
 </script>
 

@@ -11,12 +11,14 @@
 <input type="number" id="radius" placeholder="Nhập bán kính"><br><br>
 <button onclick="calculatePerimeter()">calculate</button>
 
+<p id="result"></p>
+
 <script>
     function calculatePerimeter() {
         let r = parseFloat(document.getElementById("radius").value);
         let chuVi = 2 * Math.PI * r;
 
-        console.log(chuVi);
+        document.getElementById("result").innerHTML = chuVi;
     }
 </script>
 

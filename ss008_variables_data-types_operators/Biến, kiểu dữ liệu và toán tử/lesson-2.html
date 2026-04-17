@@ -10,13 +10,14 @@
 
 <input type="number" id="celsius" placeholder="Nhập độ C"><br><br>
 <button onclick="celsiusToFahrenheit()">Chuyển đổi</button>
+<p id="result"></p>
 
 <script>
     function celsiusToFahrenheit() {
         let C = parseFloat(document.getElementById("celsius").value);
         let F = (C * 9 / 5) + 32;
 
-        console.log(F);
+        document.getElementById("result").innerHTML = F;
     }
 </script>
 
