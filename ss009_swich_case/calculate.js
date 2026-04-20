@@ -1,31 +1,26 @@
 document.getElementById("calculateDays").onclick = function () {
     let month = Number(document.getElementById("month").value);
+
+    const month31 = [1,3,5,7,8,10,12];
+    const month30 = [4,6,9,11];
+
     let result;
 
-    switch (month) {
-        case 1:
-        case 3:
-        case 5:
-        case 7:
-        case 8:
-        case 10:
-        case 12:
+    switch (true) {
+        case month31.includes(month):
             result = "31 ngày";
             break;
 
-        case 4:
-        case 6:
-        case 9:
-        case 11:
+        case month30.includes(month):
             result = "30 ngày";
             break;
 
-        case 2:
+        case month === 2:
             result = "28 hoặc 29 ngày";
             break;
 
         default:
-            result = "Không hợp lệ";
+            result = "Không ok";
     }
 
     document.getElementById("result").innerHTML = result;
