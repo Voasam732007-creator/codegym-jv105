@@ -25,7 +25,7 @@ document.getElementById("calculateDays").onclick = function () {
             break;
 
         default:
-            result = "Không hợp lệ";
+            result = "Không hợp";
     }
 
     document.getElementById("result").innerHTML = result;
