@@ -7,18 +7,16 @@ function findMax() {
 
     if (isNaN(a) || isNaN(b) || isNaN(c)) {
         result.innerHTML = "nhập đầy đủ 3 số hợp lệ";
+        return;
     }
-    else {
-        let max = a;
 
-        if (b > max) {
-            max = b;
-        }
+    let max = a;
 
-        if (c > max) {
-            max = c;
-        }
-
-        result.innerHTML = "Số lớn nhất là: " + max;
+    if (b > max) {
+        max = b;
+    } else if (c > max) {
+        max = c;
     }
+
+    result.innerHTML = "Số lớn nhất là: " + max;
 }

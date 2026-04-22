@@ -11,16 +11,19 @@ function rankStudent() {
     }
 
     const avg = (test + mid * 2 + final * 3) / 6;
+    const GIOI = 8;
+    const KHA = 6.5;
+    const TRUNGBINH = 5;
 
     let rank = "";
 
-    if (avg >= 8) {
+    if (avg >= GIOI) {
         rank = "Giỏi";
     }
-    else if (avg >= 6.5) {
+    else if (avg >= KHA) {
         rank = "Khá";
     }
-    else if (avg >= 5) {
+    else if (avg >= TRUNGBINH) {
         rank = "Trung bình";
     }
     else {
