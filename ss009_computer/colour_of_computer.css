@@ -1,0 +1,17 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+.container {
+    margin-top: 10px;
+}
+input, button {
+    font-family: sans-serif;
+}
+#result {
+    margin-top: 10px;
+    font-weight: bold;
+}
+button {
+    font-family: "Arial Black";
+}
