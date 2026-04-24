@@ -1,0 +1,14 @@
+body {
+    background: #eeeeee;
+
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    backdrop-filter: blur(5px);
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

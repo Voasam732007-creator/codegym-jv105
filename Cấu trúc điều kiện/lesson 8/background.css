@@ -1,0 +1,14 @@
+body {
+    background: #eeeeee;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    color: #2c5364;
+}
+
+#result {
+    margin-top: 15px;
+    font-weight: bold;
+}
