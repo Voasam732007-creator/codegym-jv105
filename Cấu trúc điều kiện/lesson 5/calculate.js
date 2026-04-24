@@ -4,11 +4,11 @@ function calculate() {
 
     const result = document.getElementById("result");
 
-    if(isNaN(a) || isNaN(b) || a <= 0 || b <= 0) {
-        result.innerHTML ="nhập lại";
-            return;
+    if (isNaN(a) || isNaN(b) || a <= 0 || b <= 0) {
+        result.innerHTML = "nhập lại";
+        return;
     }
-    let area = (a * b)/2;
+    let area = (a * b) / 2;
 
-    result.innerHTML = `diện tích tam giác = ${area}`;
+    result.innerHTML = `Diện tích tam giác = ${area}`;
 }

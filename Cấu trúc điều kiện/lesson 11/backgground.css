@@ -1,11 +1,13 @@
 body {
     font-family: sans-serif;
 }
+
 .container {
     max-width: 800px;
     margin: auto;
     background-color: white;
 }
+
 input {
     display: block;
     width: 100%;

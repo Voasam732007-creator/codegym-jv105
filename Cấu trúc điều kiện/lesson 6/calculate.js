@@ -8,15 +8,13 @@ function solve() {
         result.innerHTML = "nhập số hợp lệ !";
         return;
     }
+
     if (a === 0) {
-        if (b === 0) {
-            result.innerHTML = "phương trình vô số nghiệm";
-        } else {
-            result.innerHTML = "phương trình vô nghiệm";
-        }
+        result.innerHTML = (b === 0)
+            ? "phương trình vô số nghiệm"
+            : "phương trình vô nghiệm";
     } else {
         let x = -b / a;
         result.innerHTML = `Nghiệm x = ${x}`;
     }
-
 }

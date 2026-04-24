@@ -6,8 +6,7 @@ function calcTax() {
         r.innerHTML = "Vui lòng nhập hợp lệ!";
         return;
     }
-
-  // mốc thu nhập
+    // mốc thu nhập
     const LEVEL_1 = 5000000;
     const LEVEL_2 = 10000000;
 
@@ -20,12 +19,10 @@ function calcTax() {
 
     if (income <= LEVEL_1) {
         tax = income * RATE_1;
-    }
-    else if (income <= LEVEL_2) {
+    } else if (income <= LEVEL_2) {
         tax = LEVEL_1 * RATE_1
             + (income - LEVEL_1) * RATE_2;
-    }
-    else {
+    } else {
         tax = LEVEL_1 * RATE_1
             + (LEVEL_2 - LEVEL_1) * RATE_2
             + (income - LEVEL_2) * RATE_3;
