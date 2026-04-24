@@ -1,0 +1,29 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container {
+    width: 250px;
+    margin: auto;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+button {
+    padding: 8px 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #014ae4;
+}
+
+#result {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #ff4d1a;
+}
