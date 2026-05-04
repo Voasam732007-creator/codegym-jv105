@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    background-color: #f4f6f8; /* nền xám trắng nhẹ */
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    padding: 10px 18px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+
+    background-color: #2d7ef7;
+    color: white;
+}
+
+button:hover {
+    background-color: #1a5fd1;
+}
+
+#ketqua {
+    margin-top: 15px;
+    font-size: 18px;
+}
