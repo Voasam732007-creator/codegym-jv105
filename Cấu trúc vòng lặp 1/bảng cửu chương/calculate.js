@@ -1,12 +1,17 @@
 let container = document.getElementById("bang");
 
 for (let i = 2; i <= 9; i++) {
-    let table = "<table>";
+    let table = document.createElement("table");
 
     for (let j = 1; j <= 9; j++) {
-        table += `<tr><td>${i} x ${j} = ${i * j}</td></tr>`;
+        let tr = document.createElement("tr");
+        let td = document.createElement("td");
+
+        td.textContent = `${i} x ${j} = ${i * j}`;
+
+        tr.appendChild(td);
+        table.appendChild(tr);
     }
 
-    table += "</table>";
-    container.innerHTML += table;
+    container.appendChild(table);
 }

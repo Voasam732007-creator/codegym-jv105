@@ -8,7 +8,8 @@ td {
     padding: 5px 10px;
     text-align: center;
 }
-.container{
+
+.container {
     border: 1px solid #cf1b1b;
     padding: 5px;
     display: flex;

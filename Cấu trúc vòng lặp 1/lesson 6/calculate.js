@@ -11,7 +11,7 @@ const calculateSum = () => {
         number++;
     }
 
-    const result = `tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên là: ${sum}`;
+    const result = `Tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên là: ${sum}`;
 
     document.getElementById("result").innerText = result;
 };

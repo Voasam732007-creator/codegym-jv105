@@ -20,8 +20,7 @@ const playGame = () => {
 
         if (guess < secret) {
             alert("SỐ BẠN ĐOÁN LỚN HƠN");
-        }
-        else {
+        } else {
             alert("SỐ BẠN ĐOÁN NHỎ HƠN ");
         }
 
