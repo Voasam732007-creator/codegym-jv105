@@ -1,10 +1,12 @@
 function count() {
     let result = "";
 
-    for (let i = 1; i <= 100; i++) {
+    const MAX = 100;
+
+    for (let i = 1; i <= MAX; i++) {
         result += i + " ";
 
-        if (i === 99) {
+        if (i === MAX) {
             alert("hoàn thành!");
         }
     }

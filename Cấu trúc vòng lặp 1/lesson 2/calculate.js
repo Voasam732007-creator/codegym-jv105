@@ -1,11 +1,10 @@
 let temp = parseFloat(prompt("Enter current temperature:"));
-
-if (temp > 100) {
+const Max_temperature = 100;
+const Min_temperature = 20;
+if (temp > Max_temperature) {
     alert("Giảm nhiệt độ!");
-}
-else if (temp < 20) {
+} else if (temp < Min_temperature) {
     alert("Tăng nhiệt độ!");
-}
-else {
+} else {
     alert("Nhiệt độ bình thường");
 }
