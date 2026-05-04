@@ -1,0 +1,11 @@
+body {
+    background: #dfdbdb;
+    color: #000000;
+    text-align: center;
+    margin-top: 100px;
+}
+button {
+    color: #f80000;
+    background: #7c8e75;
+    padding: 10px 20px;
+}
