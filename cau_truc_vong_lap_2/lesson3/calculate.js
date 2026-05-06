@@ -18,7 +18,6 @@ const drawTriangles = () => {
         topRight += " ".repeat(n - i) + "*".repeat(i) + "\n";
     }
 
-    // 4. Dưới phải
     for (let i = n; i >= 1; i--) {
         bottomRight += " ".repeat(n - i) + "*".repeat(i) + "\n";
     }
