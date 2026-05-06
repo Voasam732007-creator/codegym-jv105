@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính lãi ngân hàng</title>
+    <link rel="stylesheet" href="background.css">
+</head>
+<body>
+<div class="container">
+    <h2>Tính lãi ngân hàng (lãi kép)</h2>
+
+    <input type="number" id="principal" placeholder="Tiền ban đầu">
+    <input type="number" id="rate" placeholder="Lãi suất (%/tháng)">
+    <input type="number" id="months" placeholder="Số tháng">
+
+    <button onclick="calculateInterest()">Tính</button>
+
+    <p id="result"></p>
+</div>
+
+<script src="calculate.js"></script>
+</body>
+</html>
