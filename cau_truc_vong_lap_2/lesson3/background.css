@@ -1,0 +1,30 @@
+body {
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background: #f2f2f2;
+}
+
+.container {
+    text-align: center;
+}
+
+input, button {
+    padding: 8px;
+    margin: 5px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+pre {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    min-height: 150px;
+}
