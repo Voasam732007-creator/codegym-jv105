@@ -1,0 +1,8 @@
+const numbers = [3, -1, 5, -7, 0, -2, 8];
+
+function countNegative() {
+    const count = numbers.filter(num => num < 0).length;
+
+    document.getElementById("result").innerText =
+        "Số nguyên âm trong mảng là: " + count;
+}
