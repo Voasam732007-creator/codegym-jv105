@@ -1,0 +1,16 @@
+
+body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+button {
+    padding: 20px 40px;
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 10px;
+    font-weight: bold;
+    color: green;
+}
