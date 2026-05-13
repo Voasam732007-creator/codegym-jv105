@@ -21,5 +21,5 @@ function tinhBMI() {
         message = "Béo phì";
     }
 
-    result.innerText = "BMI = " + bmi.toFixed(2) + " → " + message;
+    result.innerText = `BMI = ${bmi.toFixed(2)} → ${message}`;
 }
