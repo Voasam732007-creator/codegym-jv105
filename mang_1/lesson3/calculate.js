@@ -2,11 +2,13 @@ const run = () => {
     const input = document.getElementById("input");
     const result = document.getElementById("result");
 
-    const s = input.value;
+    const str = input.value;
     let r = "";
 
-    for (const c of s) {
-        r += c === c.toUpperCase() ? c.toLowerCase() : c.toUpperCase();
+    for (const character of str) {
+        r += character === character.toUpperCase()
+            ? character.toLowerCase()
+            : character.toUpperCase();
     }
 
     result.innerText = r;
