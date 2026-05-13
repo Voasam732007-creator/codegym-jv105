@@ -3,9 +3,16 @@ function run() {
     let result = "";
 
     for (let i = 0; i < input.length; i++) {
+        const currentNumber = Number(input[i]);
+        const nextValue = input[i + 1];
+        const nextNumber = Number(nextValue);
+
+        const isCurrentEven = !(currentNumber % 2);
+        const isNextEven = !(nextNumber % 2);
+
         result += input[i];
 
-        if (Number(input[i]) % 2 === 0 && Number(input[i + 1]) % 2 === 0 && input[i + 1] !== undefined) {
+        if (nextValue !== undefined && isCurrentEven && isNextEven) {
             result += "-";
         }
     }
