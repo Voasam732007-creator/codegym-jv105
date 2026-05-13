@@ -4,7 +4,9 @@ const run = () => {
     let count = 0;
 
     for (const num of arr) {
-        if (num >= 10) count++;
+        if (num >= 10) {
+            count++;
+        }
     }
 
     result.innerText = "Số phần tử >= 10: " + count;
