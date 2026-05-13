@@ -8,12 +8,13 @@ function translateWord() {
     let found = false;
 
     for (let i = 0; i < English.length; i++) {
-        if (word == English[i]) {
+        if (!English[i].localeCompare(word)) {
             document.getElementById("result").innerText = Vietnamese[i];
             found = true;
         }
     }
-    if (found == false) {
+
+    if (!found) {
         document.getElementById("result").innerText = "Không tìm thấy từ phù hợp";
     }
 }
