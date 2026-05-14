@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính Hình Tròn</title>
+
+    <link rel="stylesheet" href="background.css">
+</head>
+<body>
+
+<main class="circle-page">
+
+    <section class="circle-box">
+
+        <h2 class="page-title">
+            Calculate Area and Perimeter
+        </h2>
+
+        <input
+                type="number"
+                id="radiusInput"
+                class="radius-input"
+                placeholder="Nhập bán kính"
+        >
+
+        <button
+                class="calculate-button"
+                onclick="showCircleResult()"
+        >
+            Tính kết quả
+        </button>
+
+        <div class="result-area">
+
+            <p id="areaText"></p>
+
+            <p id="perimeterText"></p>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="calculate.js"></script>
+
+</body>
+</html>
