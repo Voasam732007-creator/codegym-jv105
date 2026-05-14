@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm Tra Ký Tự Số</title>
+
+    <link rel="stylesheet" href="number-checker.css">
+</head>
+<body>
+
+<main class="check-page">
+
+    <section class="check-box">
+
+        <h2 class="page-title">
+            Numeric Character Checking
+        </h2>
+
+        <input
+                type="text"
+                id="characterInput"
+                class="character-input"
+                placeholder="Nhập một ký tự"
+        >
+
+        <button
+                class="check-button"
+                onclick="showCheckResult()"
+        >
+            Kiểm tra
+        </button>
+
+        <p
+                id="resultText"
+                class="result-text"
+        ></p>
+
+    </section>
+
+</main>
+
+<script src="number-checker.js"></script>
+
+</body>
+</html>
