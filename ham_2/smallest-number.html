@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm Số Nhỏ Nhất</title>
+
+    <link rel="stylesheet" href="background.css">
+</head>
+<body>
+
+<main class="number-page">
+
+    <section class="number-box">
+
+        <h2 class="page-title">
+            Find the Smallest Integer
+        </h2>
+
+        <input
+                type="number"
+                id="firstNumber"
+                class="number-input"
+                placeholder="Nhập số thứ nhất"
+        >
+
+        <input
+                type="number"
+                id="secondNumber"
+                class="number-input"
+                placeholder="Nhập số thứ hai"
+        >
+
+        <input
+                type="number"
+                id="thirdNumber"
+                class="number-input"
+                placeholder="Nhập số thứ ba"
+        >
+
+        <button
+                class="find-button"
+                onclick="showSmallestNumber()"
+        >
+            Tìm số nhỏ nhất
+        </button>
+
+        <p
+                id="resultText"
+                class="result-text"
+        ></p>
+
+    </section>
+
+</main>
+
+<script src="calculate.js"></script>
+
+</body>
+</html>
