@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Manager</title>
+    <link rel="stylesheet" href="background.css">
+</head>
+<body>
+<main>
+    <h2>Add New Product</h2>
+
+    <div class="add-box">
+        <input id="productInput" type="text" placeholder="New Product">
+        <button onclick="saveProduct()">Save</button>
+    </div>
+
+    <h2>Display All Products</h2>
+
+    <div class="top-row">
+        <b>Product List</b>
+        <span id="totalProduct"></span>
+    </div>
+
+    <table>
+        <tbody id="productTable"></tbody>
+    </table>
+</main>
+
+<script src="calculate.js"></script>
+</body>
+</html>
